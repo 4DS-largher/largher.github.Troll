@@ -32,4 +32,8 @@ public class Troll {
     public boolean isAlive() {
         return hitPoints > 0;
     }
+
+    public String getName() {
+        return name;
+    }
 }
