@@ -14,4 +14,10 @@ public class Troll {
         this.maxAttack = maxAttack;
         this.rand = new Random();
     }
+
+    public void attack(Troll opponent) {
+        int damageDealt = rand.nextInt(maxAttack - minAttack + 1) + minAttack;
+        opponent.takeDamage(damageDealt);
+        System.out.println(name + " attacks " + opponent.name + " dealing " + damageDealt + " damage.");
+    }
 }
