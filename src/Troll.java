@@ -20,4 +20,12 @@ public class Troll {
         opponent.takeDamage(damageDealt);
         System.out.println(name + " attacks " + opponent.name + " dealing " + damageDealt + " damage.");
     }
+
+    public void takeDamage(int damage) {
+        hitPoints -= damage;
+        if (hitPoints < 0) {
+            hitPoints = 0;
+        }
+        System.out.println(name + " takes " + damage + " damage.");
+    }
 }
