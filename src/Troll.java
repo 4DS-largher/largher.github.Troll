@@ -28,4 +28,8 @@ public class Troll {
         }
         System.out.println(name + " takes " + damage + " damage.");
     }
+
+    public boolean isAlive() {
+        return hitPoints > 0;
+    }
 }
