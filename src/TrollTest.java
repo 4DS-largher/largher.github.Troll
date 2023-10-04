@@ -11,5 +11,13 @@ public class TrollTest {
             System.out.println(troll2.getName() + " has " + troll2.getHitPoints() + " hit points.");
             System.out.println();
         }
+
+        if (troll1.isAlive()) {
+            System.out.println(troll1.getName() + " wins!");
+        } else if (troll2.isAlive()) {
+            System.out.println(troll2.getName() + " wins!");
+        } else {
+            System.out.println("It's a draw!");
+        }
     }
 }
