@@ -36,4 +36,8 @@ public class Troll {
     public String getName() {
         return name;
     }
+
+    public int getHitPoints() {
+        return hitPoints;
+    }
 }
