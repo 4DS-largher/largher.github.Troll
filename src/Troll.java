@@ -15,7 +15,7 @@ public class Troll {
         this.rand = new Random();
     }
 
-    //method attack comment
+    //method attack comment comment
     public void attack(Troll opponent) {
         int damageDealt = rand.nextInt(maxAttack - minAttack + 1) + minAttack;
         opponent.takeDamage(damageDealt);
